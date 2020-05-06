@@ -1,0 +1,10 @@
+--- production.py.orig	2020-05-06 12:16:49.487352362 +0100
++++ production.py	2020-05-06 12:17:42.257724339 +0100
+@@ -61,6 +61,7 @@
+             'OPTIONS': {
+                 'connection_class': RequestsHttpConnection,
+             },
++            'ATOMIC_REBUILD': True,
+         }
+     }
+ 

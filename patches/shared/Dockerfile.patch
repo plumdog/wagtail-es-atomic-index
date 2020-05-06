@@ -1,0 +1,11 @@
+--- Dockerfile.orig	2020-05-06 09:10:12.278122482 +0100
++++ Dockerfile	2020-05-06 09:10:17.758172389 +0100
+@@ -13,6 +13,8 @@
+         postgresql-client \
+         procps \
+         zlib1g \
++        curl \
++        jq \
+     " \
+     && seq 1 8 | xargs -I{} mkdir -p /usr/share/man/man{} \
+     && apt-get update && apt-get install -y --no-install-recommends $RUN_DEPS \

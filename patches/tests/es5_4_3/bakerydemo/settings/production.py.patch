@@ -1,0 +1,10 @@
+--- production.py.orig	2020-05-05 23:00:53.527011928 +0100
++++ production.py	2020-05-05 23:01:00.963750135 +0100
+@@ -51,6 +51,6 @@
+     from elasticsearch import RequestsHttpConnection
+     WAGTAILSEARCH_BACKENDS = {
+         'default': {
+-            'BACKEND': 'wagtail.search.backends.elasticsearch2',
++            'BACKEND': 'wagtail.search.backends.elasticsearch5',
+             'HOSTS': [{
+                 'host': ELASTICSEARCH_ENDPOINT,
